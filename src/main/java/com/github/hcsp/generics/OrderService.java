@@ -15,7 +15,7 @@ public class OrderService {
 
     // 请改正这里的编译错误
     public void processOrders() {
-        List orders = orderDao.getAllOrders();
+        List<Order> orders = orderDao.getAllOrders();
         orderProcessService.sendOrders(orders);
     }
 }
