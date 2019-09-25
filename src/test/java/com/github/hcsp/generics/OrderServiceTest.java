@@ -7,6 +7,7 @@ import org.mockito.Mockito;
 
 public class OrderServiceTest {
     @Test
+    @SuppressWarnings("unchecked")
     public void test() {
         OrderDao orderDao = Mockito.mock(OrderDao.class);
         OrderProcessService orderProcessService = Mockito.mock(OrderProcessService.class);
