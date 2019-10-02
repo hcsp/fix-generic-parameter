@@ -1,6 +1,5 @@
 package com.github.hcsp.generics;
 
-import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
 
@@ -17,6 +16,6 @@ public class OrderService {
     // 请改正这里的编译错误
     public void processOrders() {
         List<Order> orders = orderDao.getAllOrders();
-        orderProcessService.sendOrders(new ArrayList<>(orders));
+        orderProcessService.sendOrders(orders);
     }
 }
