@@ -1,6 +1,6 @@
 # 修复带范型的类型转换问题
 
-小明想要调用隔壁老王提供的接口，但是编译无法通过，请帮助小明改正[``](https://github.com/hcsp/fix-generic-parameter/blob/master/src/main/java/com/github/hcsp/generics/OrderService.java)问题。
+小明想要调用隔壁老王提供的接口，但是编译无法通过，请帮助小明改正[`OrderService`](https://github.com/hcsp/fix-generic-parameter/blob/master/src/main/java/com/github/hcsp/generics/OrderService.java)中的问题。
 
 在提交Pull Request之前，你应当在本地确保所有代码已经编译通过，并且通过了测试(`mvn clean test`)
 
