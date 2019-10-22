@@ -1,8 +1,7 @@
 package com.github.hcsp.generics;
 
-import javax.inject.Inject;
-import java.util.ArrayList;
 import java.util.List;
+import javax.inject.Inject;
 
 public class OrderService {
     private final OrderDao orderDao;
@@ -17,7 +16,6 @@ public class OrderService {
     // 请改正这里的编译错误
     public void processOrders() {
         List<Order> orders = orderDao.getAllOrders();
-        List<Object> objects = new ArrayList<>(orders);
-        orderProcessService.sendOrders(objects);
+        orderProcessService.sendOrders(orders);
     }
 }
